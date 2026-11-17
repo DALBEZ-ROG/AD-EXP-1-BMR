@@ -1,0 +1,145 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[american,spanish,es-tabla,es-noshorthands]{babel}
+\usepackage[sfdefault]{roboto}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
+\usepackage{fontawesome5}
+\usepackage{qrcode}
+\usepackage[backend=biber,style=ieee,autolang=other]{biblatex}
+\addbibresource{../referencias.bib}
+\DeclareFieldFormat{sentencecase}{#1}
+
+\definecolor{verde}{HTML}{0B6E4F}
+\definecolor{verdesuave}{HTML}{E7F2EC}
+\definecolor{tinta}{HTML}{1F2933}
+\definecolor{gris}{HTML}{6B7280}
+\definecolor{grisclaro}{HTML}{F3F4F6}
+\definecolor{ambar}{HTML}{B45309}
+\definecolor{rojo}{HTML}{B91C1C}
+
+\setbeamersize{text margin left=0.9cm,text margin right=0.9cm}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{normal text}{fg=tinta,bg=white}
+\setbeamercolor{structure}{fg=verde}
+\setbeamercolor{alerted text}{fg=ambar}
+\setbeamercolor{block title}{fg=white,bg=verde}
+\setbeamercolor{block body}{fg=tinta,bg=verdesuave}
+\setbeamercolor{block title alerted}{fg=white,bg=ambar}
+\setbeamercolor{block body alerted}{fg=tinta,bg=grisclaro}
+\setbeamercolor{bibliography entry author}{fg=tinta}
+\setbeamercolor{bibliography entry title}{fg=tinta}
+\setbeamercolor{bibliography entry location}{fg=gris}
+\setbeamercolor{bibliography entry note}{fg=gris}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\urlstyle{same}
+
+\setbeamertemplate{frametitle}{\vspace*{0.35cm}\begin{minipage}{\linewidth}{\usebeamerfont{frametitle}\color{verde}\insertframetitle\par}\vspace{3pt}{\color{verde}\rule{1.6cm}{2pt}}\end{minipage}}
+
+\newcommand{\quienexpone}{}
+\setbeamertemplate{footline}{\hbox to \paperwidth{\hspace{0.9cm}{\scriptsize\color{gris}Servicios web: SOAP y REST}\hfill{\scriptsize\bfseries\color{verde}\quienexpone}\hfill{\scriptsize\color{gris}\insertframenumber/\inserttotalframenumber}\hspace{0.9cm}}\vspace{0.28cm}}
+
+\setbeamertemplate{title page}{\begin{minipage}[c][0.86\textheight][c]{\linewidth}{\small\color{gris}\insertinstitute\par}\vspace{0.8cm}{\color{verde}\fontsize{30}{34}\selectfont\bfseries\inserttitle\par}\vspace{0.3cm}{\large\insertsubtitle\par}\vspace{0.45cm}{\color{verde}\rule{2.4cm}{3pt}}\par\vspace{0.55cm}{\normalsize\insertauthor\par}\vspace{0.2cm}{\small\color{gris}\insertdate\par}\end{minipage}}
+
+\newcommand{\seccion}[2]{\renewcommand{\quienexpone}{Expone: #2}\IfFileExists{secciones/#1.tex}{\input{secciones/#1}}{\begin{frame}{Pendiente}\vfill\centering{\color{gris}Falta \texttt{secciones/#1.tex}}\vfill\end{frame}}}
+
+\newcommand{\bloque}[2]{\renewcommand{\quienexpone}{}\begin{frame}[plain,noframenumbering]\vfill{\large\color{gris}#1\par}\vspace{6pt}{\color{verde}\fontsize{28}{32}\selectfont\bfseries #2\par}\vspace{10pt}{\color{verde}\rule{2.4cm}{3pt}}\vfill\end{frame}}
+
+\newcommand{\fuente}[1]{\par\vfill\hfill{\scriptsize\color{gris}Fuente: \cite{#1}}}
+
+\newcommand{\cifra}[2]{\begin{minipage}[t]{\linewidth}\centering{\color{verde}\fontsize{26}{30}\selectfont\bfseries #1\par}\vspace{4pt}{\small #2\par}\end{minipage}}
+
+\title{Servicios web: SOAP y REST}
+\subtitle{Qué son, cómo funcionan y dónde los aplicamos en nuestros proyectos}
+\author{Dariem Benites \quad·\quad Angello Mendoza \quad·\quad Dayver Rivas}
+\institute{Universidad Técnica Estatal de Quevedo \quad·\quad Carrera de Software\\Aplicaciones Distribuidas (ISR-701) \quad·\quad Paralelo B}
+\date{EXP-1 \quad·\quad Docente: Gleiston Guerrero Ulloa, PhD \quad·\quad Noviembre de 2026}
+
+\begin{document}
+
+\begin{frame}[plain,noframenumbering]
+\titlepage
+\end{frame}
+
+\renewcommand{\quienexpone}{Expone: Dariem Benites}
+\begin{frame}{Agenda}
+\begin{columns}[T]
+\begin{column}{0.47\textwidth}
+{\color{verde}\bfseries Parte 1. Explicación general\par}
+\vspace{6pt}
+\begin{enumerate}
+\item Qué es un servicio web
+\item Arquitectura: SOAP y REST
+\item Transparencias
+\item CAP y PACELC
+\item Modelos de comunicación
+\item Tolerancia a fallos
+\item Comparación y postura crítica
+\end{enumerate}
+\end{column}
+\begin{column}{0.47\textwidth}
+{\color{verde}\bfseries Parte 2. En nuestros proyectos\par}
+\vspace{6pt}
+\begin{enumerate}
+\setcounter{enumi}{7}
+\item PresustentacionesAWPS
+\item SGIRI
+\item Gestión documental de titulación
+\item Lecciones y conclusiones
+\end{enumerate}
+\end{column}
+\end{columns}
+\end{frame}
+
+\bloque{Parte 1}{Explicación general}
+\seccion{01-servicios-web}{Dariem Benites}
+\seccion{02-arquitectura}{Dariem Benites}
+\seccion{03-transparencias}{Angello Mendoza}
+\seccion{04-cap-pacelc}{Angello Mendoza}
+\seccion{05-comunicacion}{Angello Mendoza}
+\seccion{06-fallos}{Dayver Rivas}
+\seccion{07-comparacion}{Dayver Rivas}
+
+\bloque{Parte 2}{En nuestros proyectos}
+\seccion{08-aplicacion-benites}{Dariem Benites}
+\seccion{09-aplicacion-mendoza}{Angello Mendoza}
+\seccion{10-aplicacion-rivas}{Dayver Rivas}
+\seccion{11-lecciones}{Dariem Benites}
+
+\renewcommand{\quienexpone}{}
+\begin{frame}[plain,noframenumbering]
+\vfill
+\begin{columns}[c]
+\begin{column}{0.6\textwidth}
+{\color{verde}\fontsize{30}{34}\selectfont\bfseries ¿Preguntas?\par}
+\vspace{10pt}
+{\color{verde}\rule{2.4cm}{3pt}\par}
+\vspace{12pt}
+{\small Diapositivas, notas, diagrama y evidencias:\par}
+{\small\url{https://github.com/DALBEZ-ROG/AD-EXP-1-BMR}\par}
+\end{column}
+\begin{column}{0.3\textwidth}
+\centering
+\qrcode[height=3.2cm]{https://github.com/DALBEZ-ROG/AD-EXP-1-BMR}
+\end{column}
+\end{columns}
+\vfill
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Referencias}
+\scriptsize
+\printbibliography[heading=none]
+\end{frame}
+
+\end{document}

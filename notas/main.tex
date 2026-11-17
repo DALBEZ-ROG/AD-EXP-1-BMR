@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[american,spanish,es-tabla]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{lmodern}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries}
+\titlespacing*{\section}{0pt}{9pt}{3pt}
+\usepackage[font=small,skip=4pt]{caption}
+\usepackage[backend=biber,style=ieee,autolang=other]{biblatex}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\addbibresource{../referencias.bib}
+\DeclareFieldFormat{sentencecase}{#1}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{0pt}
+\setlist{nosep,leftmargin=*}
+
+\newcommand{\parte}[4]{\section{#2}{\small\textbf{Expone:} #3\quad\textbf{Tiempo:} #4\par}\smallskip\IfFileExists{secciones/#1.tex}{\input{secciones/#1}}{\textit{Falta \texttt{secciones/#1.tex}.}\par}}
+
+\newcommand{\evidencia}[2]{\IfFileExists{../evidencias/#1}{\begin{figure}[H]\centering\includegraphics[width=0.92\linewidth,height=0.38\textheight,keepaspectratio]{../evidencias/#1}\caption{#2}\end{figure}}{\textit{Falta \texttt{evidencias/#1}.}\par}}
+
+\begin{document}
+
+\begin{center}
+  {\small Universidad Técnica Estatal de Quevedo -- Carrera de Software\par}
+  {\small Aplicaciones Distribuidas (ISR-701), paralelo B\par}
+  \vspace{4pt}
+  {\Large\bfseries Notas de la exposición: Servicios web (SOAP y REST)\par}
+  \vspace{2pt}
+  {\normalsize EXP-1 (GA-SUM-02), exposición del primer corte\par}
+  \vspace{4pt}
+  {\small Benites Pérez Dariem Alberto \quad Mendoza Bermello Angello Agustín \quad Rivas Piloso Dayver Yahir\par}
+  {\small 21 de noviembre de 2026\par}
+\end{center}
+
+\section*{Orden y tiempos}
+
+\begin{center}
+\small
+\begin{tabular}{@{}rllr@{}}
+\toprule
+\# & Parte & Expone & Tiempo \\
+\midrule
+1 & Qué es un servicio web y a qué escala se usa & Dariem Benites & 0:45 \\
+2 & Arquitectura: SOAP y REST & Dariem Benites & 1:05 \\
+3 & Transparencias de distribución & Angello Mendoza & 0:50 \\
+4 & CAP y PACELC & Angello Mendoza & 0:50 \\
+5 & Modelos de comunicación & Angello Mendoza & 0:50 \\
+6 & Tolerancia a fallos y un incidente real & Dayver Rivas & 1:20 \\
+7 & Comparación y postura crítica & Dayver Rivas & 0:50 \\
+8 & Aplicación en PresustentacionesAWPS & Dariem Benites & 1:15 \\
+9 & Aplicación en SGIRI & Angello Mendoza & 1:15 \\
+10 & Aplicación en Gestión documental de titulación & Dayver Rivas & 1:15 \\
+11 & Lecciones para el PFC y conclusiones & Dariem Benites & 0:35 \\
+\midrule
+ & Portada y agenda (Dariem Benites) y total & & 11:00 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\parte{01-servicios-web}{Qué es un servicio web y a qué escala se usa}{Dariem Benites}{0:45}
+\parte{02-arquitectura}{Arquitectura: SOAP y REST}{Dariem Benites}{1:05}
+\parte{03-transparencias}{Transparencias de distribución}{Angello Mendoza}{0:50}
+\parte{04-cap-pacelc}{CAP y PACELC}{Angello Mendoza}{0:50}
+\parte{05-comunicacion}{Modelos de comunicación}{Angello Mendoza}{0:50}
+\parte{06-fallos}{Tolerancia a fallos y un incidente real}{Dayver Rivas}{1:20}
+\parte{07-comparacion}{Comparación y postura crítica}{Dayver Rivas}{0:50}
+\parte{08-aplicacion-benites}{Aplicación en PresustentacionesAWPS}{Dariem Benites}{1:15}
+\parte{09-aplicacion-mendoza}{Aplicación en SGIRI}{Angello Mendoza}{1:15}
+\parte{10-aplicacion-rivas}{Aplicación en Gestión documental de titulación}{Dayver Rivas}{1:15}
+\parte{11-lecciones}{Lecciones para el PFC y conclusiones}{Dariem Benites}{0:35}
+
+\section*{Tabla de aportes}
+
+\small
+\noindent
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.3cm} >{\raggedright\arraybackslash}p{3.4cm} >{\raggedright\arraybackslash}X@{}}
+\toprule
+Integrante & Partes que expone & Aportes en el repositorio \\
+\midrule
+Benites Pérez Dariem Alberto & 1, 2, 8 y 11 & Creación del repositorio, carátula, base de las diapositivas y de las notas, bibliografía, secciones 1, 2, 8 y 11, diagrama de arquitectura, servicio SOAP en PresustentacionesAWPS, README y bitácora. \\
+Mendoza Bermello Angello Agustín & 3, 4, 5 y 9 & Secciones 3, 4, 5 y 9 de las diapositivas y de las notas, evidencias de la API de SGIRI y una captura de lectura. \\
+Rivas Piloso Dayver Yahir & 6, 7 y 10 & Secciones 6, 7 y 10 de las diapositivas y de las notas, diagrama de Ishikawa, evidencias de la API de Gestión documental de titulación y una captura de lectura. \\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+\section*{Declaración de uso de inteligencia artificial}
+
+\small
+\noindent
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}l >{\raggedright\arraybackslash}X@{}}
+  Herramienta: & Claude (Anthropic), modelo Claude Opus 5.5, en la aplicación Claude Code. \\
+  Para qué se usó: & Propuso la estructura de la exposición y el reparto de tiempos, buscó las fuentes, armó la plantilla de Beamer y de estas notas, la bibliografía y la carátula, y redactó los borradores del README y de la bitácora. \\[3pt]
+  Cómo se verificó: & Cada DOI se comprobó en Crossref (autores, año, título, revista, volumen, número y páginas). Las páginas web citadas y los WSDL del SRI se abrieron el 16 de noviembre de 2026 para confirmar títulos, fechas y datos. \\
+\end{tabularx}
+\normalsize
+
+\printbibliography[title={Referencias}]
+
+\clearpage
+\section*{Anexo A. Primer bosquejo a mano}
+\evidencia{bosquejo-a-mano.jpg}{Primer bosquejo de la arquitectura, hecho a mano por el equipo.}
+
+\section*{Anexo B. Lectura de las fuentes}
+\evidencia{lectura-1.png}{Lectura 1.}
+\evidencia{lectura-2.png}{Lectura 2.}
+\evidencia{lectura-3.png}{Lectura 3.}
+
+\end{document}
