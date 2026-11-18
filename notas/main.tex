@@ -1,8 +1,8 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[american,spanish,es-tabla]{babel}
-\usepackage[margin=2cm]{geometry}
+\usepackage[margin=1.8cm]{geometry}
 \usepackage{lmodern}
 \usepackage{csquotes}
 \usepackage{graphicx}
@@ -20,6 +20,7 @@
 \usepackage{xurl}
 \addbibresource{../referencias.bib}
 \DeclareFieldFormat{sentencecase}{#1}
+\AtBeginBibliography{\small}
 \setlength{\parskip}{3pt}
 \setlength{\parindent}{0pt}
 \setlist{nosep,leftmargin=*}
@@ -42,30 +43,7 @@
   {\small 21 de noviembre de 2026\par}
 \end{center}
 
-\section*{Orden y tiempos}
-
-\begin{center}
-\small
-\begin{tabular}{@{}rllr@{}}
-\toprule
-\# & Parte & Expone & Tiempo \\
-\midrule
-1 & Qué es un servicio web y a qué escala se usa & Dariem Benites & 0:45 \\
-2 & Arquitectura: SOAP y REST & Dariem Benites & 1:05 \\
-3 & Transparencias de distribución & Angello Mendoza & 0:50 \\
-4 & CAP y PACELC & Angello Mendoza & 0:50 \\
-5 & Modelos de comunicación & Angello Mendoza & 0:50 \\
-6 & Tolerancia a fallos y un incidente real & Dayver Rivas & 1:20 \\
-7 & Comparación y postura crítica & Dayver Rivas & 0:50 \\
-8 & Aplicación en PresustentacionesAWPS & Dariem Benites & 1:15 \\
-9 & Aplicación en SGIRI & Angello Mendoza & 1:15 \\
-10 & Aplicación en Gestión documental de titulación & Dayver Rivas & 1:15 \\
-11 & Lecciones para el PFC y conclusiones & Dariem Benites & 0:35 \\
-\midrule
- & Portada y agenda (Dariem Benites) y total & & 11:00 \\
-\bottomrule
-\end{tabular}
-\end{center}
+\noindent{\small Tiempo planeado: 11 minutos de los 12 permitidos. Dariem Benites abre con la portada y la agenda (10 segundos).\par}
 
 \parte{01-servicios-web}{Qué es un servicio web y a qué escala se usa}{Dariem Benites}{0:45}
 \parte{02-arquitectura}{Arquitectura: SOAP y REST}{Dariem Benites}{1:05}
@@ -100,8 +78,8 @@ Rivas Piloso Dayver Yahir & 6, 7 y 10 & Secciones 6, 7 y 10 de las diapositivas 
 \noindent
 \begin{tabularx}{\textwidth}{@{}>{\bfseries}l >{\raggedright\arraybackslash}X@{}}
   Herramienta: & Claude (Anthropic), modelo Claude Opus 5.5, en la aplicación Claude Code. \\
-  Para qué se usó: & Propuso la estructura de la exposición y el reparto de tiempos, buscó las fuentes, armó la plantilla de Beamer y de estas notas, la bibliografía y la carátula, y redactó los borradores del README y de la bitácora. \\[3pt]
-  Cómo se verificó: & Cada DOI se comprobó en Crossref (autores, año, título, revista, volumen, número y páginas). Las páginas web citadas y los WSDL del SRI se abrieron el 16 de noviembre de 2026 para confirmar títulos, fechas y datos. \\
+  Para qué se usó: & Propuso la estructura de la exposición y el reparto de tiempos, buscó las fuentes, armó la plantilla de Beamer y de estas notas, la bibliografía y la carátula, y redactó los borradores del README y de la bitácora. Redactó las diapositivas y las notas de las partes generales (1 a 7 y 11), hizo el diagrama de arquitectura en draw.io y el Ishikawa en TikZ. En PresustentacionesAWPS programó el servicio SOAP (contrato XSD, \emph{endpoint}, SOAP Fault y dos pruebas), cambió la respuesta del REST a \texttt{404} cuando la solicitud no existe y escribió el script de medición REST frente a SOAP. A pedido de Dariem, ejecutó esa medición en su computadora (200 consultas por estilo), tomó la captura de la terminal y preparó la captura de la lectura 1, resaltando las frases que usamos. También hizo una imagen de referencia de la arquitectura que copiamos a mano para el bosquejo del anexo A. \\[3pt]
+  Cómo se verificó: & Cada DOI se comprobó en Crossref (autores, año, título, revista, volumen, número y páginas) y cada cifra se comparó con su fuente; las páginas web y los WSDL del SRI se abrieron el 16 y 17 de noviembre de 2026. El servicio SOAP se probó con peticiones reales al backend local, y las 119 pruebas del proyecto pasaron. \\
 \end{tabularx}
 \normalsize
 
