@@ -1,0 +1,17 @@
+﻿Medicion REST frente a SOAP - PresustentacionesAWPS
+Fecha: 2026-11-17 18:07:54   Equipo: DALBEZ-ROG-PC   Usuario: dbeni
+Consulta: estado de la solicitud 1   Repeticiones por estilo: 200 (alternadas, tras 20 de calentamiento)
+
+Respuesta REST  GET http://localhost:8090/api/estado/solicitud/1
+{"solicitudId":1,"anteproyectoIntegridadVerificada":true,"actaGenerada":false,"solicitudEstado":"APROBADA","anteproyectoSha256":"689802e910c525a5bb0aeffc5c9745777a6d3dde7122bead5256d1967a95325a","anteproyectoEstado":"ENVIADO","timestamp":1794956872848}
+
+Respuesta SOAP  POST http://localhost:8090/ws  (operacion ConsultarEstadoSolicitud)
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><ns2:ConsultarEstadoSolicitudResponse xmlns:ns2="http://uteq.edu.ec/presustentaciones/estado"><ns2:solicitudId>1</ns2:solicitudId><ns2:solicitudEstado>APROBADA</ns2:solicitudEstado><ns2:anteproyectoEstado>ENVIADO</ns2:anteproyectoEstado><ns2:anteproyectoSha256>689802e910c525a5bb0aeffc5c9745777a6d3dde7122bead5256d1967a95325a</ns2:anteproyectoSha256><ns2:anteproyectoIntegridadVerificada>true</ns2:anteproyectoIntegridadVerificada><ns2:actaGenerada>false</ns2:actaGenerada><ns2:timestamp>1794956872961</ns2:timestamp></ns2:ConsultarEstadoSolicitudResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
+
+
+Estilo      Peticion (bytes) Respuesta (bytes) Promedio (ms) Mediana (ms) P95 (ms)
+------      ---------------- ----------------- ------------- ------------ --------
+REST (JSON)                0               252          2,99         2,48     5,63
+SOAP (XML)               308               703          3,78         3,24     6,21
+
+Relacion de tamano de la respuesta SOAP/REST: 2.79
