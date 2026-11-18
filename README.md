@@ -20,7 +20,7 @@ Pendiente.
 | `notas/` | Notas de la exposición: qué se dice en cada parte, quién la expone, tabla de aportes y declaración de uso de IA |
 | `referencias.bib` | Bibliografía en formato IEEE (biblatex), compartida por las diapositivas y las notas |
 | `diagrama/` | Diagrama de arquitectura en draw.io (`.drawio`) y su exportación |
-| `evidencias/` | Foto del bosquejo a mano y capturas de las lecturas |
+| `evidencias/` | Foto del bosquejo a mano, capturas de las lecturas y, en `medicion/`, el script y el resultado de la medición REST frente a SOAP |
 | `caratula/` | Carátula de una página para el SGA |
 | `BITACORA.md` | Sesiones de trabajo del equipo |
 
@@ -51,3 +51,13 @@ pdflatex main
 Carátula: `pdflatex caratula` dentro de `caratula/` (una sola pasada).
 
 Los archivos `main.bbl` se dejan en el repositorio. Si `biber` no está disponible, `pdflatex` usa ese archivo y las referencias salen igual.
+
+## Cómo repetir la medición REST frente a SOAP
+
+Con el backend de PresustentacionesAWPS corriendo en `http://localhost:8090` y una solicitud registrada:
+
+```
+powershell -ExecutionPolicy Bypass -File evidencias/medicion/medicion-rest-soap.ps1
+```
+
+El script hace la misma consulta de estado por REST y por SOAP, 200 veces cada una, y guarda el resultado en `resultado-medicion.txt`.
