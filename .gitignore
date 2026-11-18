@@ -1,0 +1,17 @@
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+Thumbs.db
+desktop.ini
+.DS_Store
