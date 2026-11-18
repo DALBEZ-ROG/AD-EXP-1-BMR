@@ -1,0 +1,41 @@
+\begin{frame}{Un servicio web: una función que otro sistema llama por la red}
+\begin{columns}[c]
+\begin{column}{0.46\textwidth}
+\begin{itemize}
+\item Expone operaciones sobre HTTP, con un contrato que dice qué se envía y qué se recibe.
+\item Al cliente no le importa el lenguaje ni la máquina del servidor.
+\item Dos estilos: \alert{SOAP} (mensajes XML) y \alert{REST} (recursos y JSON).
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\centering
+\begin{tikzpicture}[caja/.style={draw=verde,rounded corners=3pt,fill=verdesuave,text width=2.3cm,minimum height=0.9cm,font=\scriptsize,align=center}, flecha/.style={-{Stealth[length=2.5mm]},thick,color=tinta}, etiqueta/.style={font=\scriptsize,color=gris}]
+\node[caja] (conta) {Software contable\\(cualquier lenguaje)};
+\node[caja,right=1.5cm of conta] (sri) {SRI: recepción\\y autorización};
+\node[caja,below=0.9cm of conta] (ang) {Angular\\(TypeScript)};
+\node[caja,right=1.5cm of ang] (spring) {Spring Boot\\(Java)};
+\draw[flecha] (conta) -- node[above,etiqueta]{SOAP / XML} (sri);
+\draw[flecha] (ang) -- node[above,etiqueta]{REST / JSON} (spring);
+\end{tikzpicture}
+\end{column}
+\end{columns}
+\fuente{w3c_soap12,fielding2000,sri_recepcion}
+\end{frame}
+
+\begin{frame}{¿A qué escala se usan?}
+\begin{columns}[T]
+\begin{column}{0.31\textwidth}
+\cifra{192 millones}{de peticiones por segundo a la API de DynamoDB en Prime Day 2026, y más de 59 billones en cuatro días \cite{aws_primeday2026}}
+\end{column}
+\begin{column}{0.31\textwidth}
+\cifra{500}{API REST públicas halladas entre los 4000 sitios más visitados; solo el 0,8\,\% cumple todos los principios REST \cite{neumann2021}}
+\end{column}
+\begin{column}{0.31\textwidth}
+\cifra{SOAP}{en Ecuador: los comprobantes electrónicos se envían a los servicios de recepción y autorización del SRI \cite{sri_recepcion,sri_autorizacion}}
+\end{column}
+\end{columns}
+\vspace{16pt}
+\begin{block}{En nuestro entorno}
+Nuestros tres proyectos ya se comunican por servicios web: el front en Angular le pide los datos al backend por REST. En la segunda parte cada uno muestra el suyo.
+\end{block}
+\end{frame}

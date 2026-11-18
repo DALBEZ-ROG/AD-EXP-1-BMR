@@ -12,9 +12,11 @@
 \usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
 \usepackage{fontawesome5}
 \usepackage{qrcode}
+\usepackage{listings}
 \usepackage[backend=biber,style=ieee,autolang=other]{biblatex}
 \addbibresource{../referencias.bib}
 \DeclareFieldFormat{sentencecase}{#1}
+\AtBeginBibliography{\scriptsize}
 
 \definecolor{verde}{HTML}{0B6E4F}
 \definecolor{verdesuave}{HTML}{E7F2EC}
@@ -23,6 +25,8 @@
 \definecolor{grisclaro}{HTML}{F3F4F6}
 \definecolor{ambar}{HTML}{B45309}
 \definecolor{rojo}{HTML}{B91C1C}
+
+\lstset{language=Java,basicstyle=\ttfamily\scriptsize,keywordstyle=\color{verde}\bfseries,stringstyle=\color{ambar},commentstyle=\color{gris},showstringspaces=false,breaklines=true,columns=fullflexible,frame=single,rulecolor=\color{verdesuave},backgroundcolor=\color{grisclaro},xleftmargin=3pt,xrightmargin=3pt,aboveskip=2pt,belowskip=2pt}
 
 \setbeamersize{text margin left=0.9cm,text margin right=0.9cm}
 \setbeamertemplate{navigation symbols}{}
