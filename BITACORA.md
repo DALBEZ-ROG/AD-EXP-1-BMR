@@ -32,3 +32,14 @@
   - La consulta REST devolvía `200` con datos vacíos cuando la solicitud no existía; ahora devuelve `404`. El SOAP responde con un SOAP Fault.
   - IntelliJ no mostraba los cambios para hacer el commit porque el proyecto tenía registradas como repositorios Git dos carpetas que no lo eran; se quitaron en la configuración de control de versiones.
   - Al primer bosquejo le faltaban los nombres y la fecha; se agregaron y se volvió a subir la foto.
+
+## Martes 17 de noviembre de 2026 (segunda sesión)
+
+- **Presentes:** Angello Mendoza.
+- **Qué hicimos:**
+  - Se revisó el código de SGIRI para confirmar qué servicios web expone y cuáles consume: la API REST de tickets, Globalping y Cloudinary.
+  - Se armó la sección 9 de las diapositivas con el diagrama, las rutas reales de `TicketController` y la cadena de respaldo de Globalping.
+  - Se escribió el borrador de la nota de esa parte.
+- **Problemas resueltos:**
+  - Se comprobó en `GlobalpingServiceImpl` que la cadena es IPv4 en Ecuador, IPv6 en Ecuador e IPv4 en Sudamérica, y que si todo falla se guarda la corrida como fallida y se copia el último resultado bueno.
+  - La sección 9 compila sin la captura de Postman: la diapositiva deja un recuadro en su lugar y la imagen entra cuando exista el archivo.
