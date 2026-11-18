@@ -1,0 +1,55 @@
+<mxfile host="drawio" version="24.7.17">
+  <diagram name="Arquitectura" id="arquitectura-servicios-web">
+    <mxGraphModel dx="1040" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1080" pageHeight="580" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="contenedor" value="Backend Spring Boot 3.2 · Java 17" style="rounded=1;arcSize=3;whiteSpace=wrap;html=1;fillColor=#F7F9F8;strokeColor=#6B7280;dashed=1;verticalAlign=top;fontSize=20;fontStyle=1;fontColor=#1F2933;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="600" height="545" as="geometry" />
+        </mxCell>
+        <mxCell id="jwt" value="Filtro JWT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6B7280;horizontal=0;fontSize=18;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="275" y="60" width="45" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="angular" value="&lt;b&gt;Angular&lt;/b&gt;&lt;br&gt;JSON + JWT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7F2EC;strokeColor=#0B6E4F;strokeWidth=2;fontSize=20;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="10" y="55" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="clientesoap" value="&lt;b&gt;Cliente SOAP&lt;/b&gt;&lt;br&gt;XML + JWT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF1E3;strokeColor=#B45309;strokeWidth=2;fontSize=20;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="10" y="395" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rest" value="&lt;b&gt;REST&lt;/b&gt;&lt;br&gt;EstadoTiempoRealController&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;GET /api/estado/solicitud/{id}&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E7F2EC;strokeColor=#0B6E4F;strokeWidth=2;fontSize=18;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="345" y="45" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="soap" value="&lt;b&gt;SOAP&lt;/b&gt;&lt;br&gt;EstadoSolicitudEndpoint&lt;br&gt;&lt;span style=&quot;font-size:16px&quot;&gt;POST /ws · WSDL /ws/estado.wsdl&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF1E3;strokeColor=#B45309;strokeWidth=2;fontSize=18;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="345" y="385" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="servicio" value="&lt;b&gt;EstadoConsultaService&lt;/b&gt;&lt;br&gt;lógica compartida" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2933;strokeWidth=2;fontSize=18;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="610" y="215" width="225" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="repos" value="&lt;b&gt;Repositorios JPA&lt;/b&gt;&lt;br&gt;solicitud, anteproyecto, acta" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#1F2933;strokeWidth=2;fontSize=18;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="610" y="395" width="225" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pg" value="&lt;b&gt;PostgreSQL 18&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#E7F2EC;strokeColor=#0B6E4F;strokeWidth=2;fontSize=18;fontColor=#1F2933;" vertex="1" parent="1">
+          <mxGeometry x="915" y="385" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2.5;strokeColor=#0B6E4F;" edge="1" parent="1" source="angular" target="rest">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2.5;strokeColor=#B45309;" edge="1" parent="1" source="clientesoap" target="soap">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#1F2933;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="rest" target="servicio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#1F2933;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" edge="1" parent="1" source="soap" target="servicio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#1F2933;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="servicio" target="repos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="JDBC" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#1F2933;fontSize=17;fontColor=#1F2933;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="repos" target="pg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
