@@ -43,3 +43,14 @@
 - **Problemas resueltos:**
   - Se comprobó en `GlobalpingServiceImpl` que la cadena es IPv4 en Ecuador, IPv6 en Ecuador e IPv4 en Sudamérica, y que si todo falla se guarda la corrida como fallida y se copia el último resultado bueno.
   - La sección 9 compila sin la captura de Postman: la diapositiva deja un recuadro en su lugar y la imagen entra cuando exista el archivo.
+
+## Miércoles 18 de noviembre de 2026
+
+- **Presentes:** Angello Mendoza.
+- **Qué hicimos:**
+  - Se revisaron las secciones 3, 4 y 5 que preparó Dariem y se subieron con sus notas.
+  - En la sección 4 se cambió la cita de Brewer por la de Abadi: la de Brewer no tiene PDF de acceso libre y la de Abadi sí, y dice lo mismo de las particiones.
+  - Se comprobó que las diapositivas y las notas compilan sin errores y sin texto que se salga del marco.
+- **Problemas resueltos:**
+  - La tabla de la sección 4 y el bloque de abajo se pasaban del alto de la diapositiva; se acortaron las frases y ya entran.
+  - La tabla de la sección 9 se salía a lo ancho; se cambió la ruta completa por la parte final y se aclaró que todas cuelgan de `/api/tickets`.

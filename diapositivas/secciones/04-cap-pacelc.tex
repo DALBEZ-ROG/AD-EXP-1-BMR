@@ -1,0 +1,26 @@
+\begin{frame}{CAP y PACELC: lo decide lo que está detrás del servicio}
+\begin{columns}[T]
+\begin{column}{0.34\textwidth}
+\small
+\begin{itemize}
+\item Un servicio REST no guarda nada entre peticiones \cite{fielding2000}: decide la base de datos que tiene detrás.
+\item Con partición se elige entre disponibilidad y consistencia; sin partición, entre latencia y consistencia \cite{abadi2012}.
+\end{itemize}
+\end{column}
+\begin{column}{0.62\textwidth}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\toprule
+Sistema & Qué prioriza \\
+\midrule
+DynamoDB & Lectura eventual por defecto, que cuesta la mitad; con \texttt{ConsistentRead=true} devuelve el dato más reciente \cite{aws_consistencia} \\
+Caché HTTP & Entrega la copia guardada mientras siga fresca; con \texttt{ETag} pregunta si cambió \cite{rfc9111} \\
+Nuestro PFC & Una sola base PostgreSQL: lee lo último, pero si la base cae el servicio falla (C antes que A) \\
+\bottomrule
+\end{tabularx}
+\end{column}
+\end{columns}
+\begin{block}{CAP no es elegir dos de tres para siempre}
+Las particiones de red son raras: casi siempre se puede tener C y A, y la decisión real es latencia o consistencia \cite{abadi2012}.
+\end{block}
+\end{frame}

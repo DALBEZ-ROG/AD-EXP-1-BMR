@@ -1,0 +1,17 @@
+\begin{frame}{Modelos de comunicación}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}l l X@{}}
+\toprule
+Caso & Estilo & Cómo se comunican y por qué \\
+\midrule
+SRI & SOAP / XML & Síncrono por llamada, pero en dos pasos: recepción y luego autorización con la clave de acceso. Un solo WSDL sirve de contrato a cualquier sistema de facturación \cite{sri_recepcion,sri_autorizacion} \\
+Nuestro PFC & REST / JSON & Síncrono: Angular pregunta el estado cada 15 s (\emph{polling}). Simple y compatible con JWT, pero consulta aunque nada cambie \\
+SGIRI & REST / JSON & Asíncrono sobre REST: \texttt{POST} crea la medición en Globalping y \texttt{GET} trae el resultado \\
+DynamoDB & RPC sobre HTTP & \texttt{POST} con la operación en una cabecera y JSON: usa HTTP, pero no es REST \cite{aws_dynamodb_api} \\
+\bottomrule
+\end{tabularx}
+\vspace{6pt}
+\begin{block}{Idea clave}
+Usar HTTP y JSON no vuelve REST a una API: depende de cómo se nombran los recursos y se usan los verbos.
+\end{block}
+\end{frame}

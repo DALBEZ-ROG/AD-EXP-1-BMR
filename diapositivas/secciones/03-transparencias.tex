@@ -1,0 +1,18 @@
+\begin{frame}{Transparencias: qué oculta un servicio web y qué no}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}l c X@{}}
+\toprule
+Transparencia & ¿La da? & Ejemplo concreto \\
+\midrule
+Acceso & \textcolor{verde}{\faCheck} & Angular (TypeScript) y un cliente SOAP en Java llaman al mismo backend Spring Boot \\
+Ubicación & \textcolor{verde}{\faCheck} & El cliente usa un nombre (\texttt{dynamodb.us-east-1.amazonaws.com}), no la IP del servidor \\
+Replicación & \textcolor{verde}{\faCheck} & Ese nombre reparte el tráfico entre varios servidores con pesos; el cliente no elige cuál \cite{aws2025} \\
+Concurrencia & \textcolor{verde}{\faCheck} & Muchos estudiantes consultan su estado a la vez sin verse entre ellos \\
+Fallo & \textcolor{rojo}{\faTimes} & El cliente ve el \emph{timeout}, el 5xx o el SOAP Fault, y tiene que reaccionar \\
+\bottomrule
+\end{tabularx}
+\vspace{6pt}
+\begin{alertblock}{Cuando la ubicación deja de ser transparente}
+En octubre de 2025 el nombre de la API de DynamoDB quedó con un registro DNS vacío: el servicio seguía ahí, pero nadie lo podía encontrar \cite{aws2025}.
+\end{alertblock}
+\end{frame}
