@@ -1,0 +1,40 @@
+\begin{frame}{SOAP frente a REST}
+\small
+\begin{tabularx}{\linewidth}{@{}l X X@{}}
+\toprule
+ & SOAP & REST \\
+\midrule
+Contrato & WSDL obligatorio \cite{w3c_wsdl11} & OpenAPI opcional \cite{openapi31} \\
+Formato & XML dentro de un sobre & JSON casi siempre \\
+Errores & SOAP Fault, enviado con HTTP 500 & Códigos HTTP: 404, 409, 503\dots{} \cite{rfc9110} \\
+Caché & Casi nunca: las peticiones van por \texttt{POST} & Sí: \texttt{GET} con \texttt{Cache-Control} y \texttt{ETag} \cite{rfc9111} \\
+Tamaño en nuestro PFC & 703 bytes de respuesta y 308 de petición & 252 bytes de respuesta \\
+Sistemas reales & SRI, facturación electrónica & DynamoDB y nuestros tres proyectos \\
+\bottomrule
+\end{tabularx}
+\end{frame}
+
+\begin{frame}{Postura del equipo}
+\begin{columns}[T]
+\begin{column}{0.47\textwidth}
+\begin{block}{SOAP conviene cuando\dots}
+\begin{itemize}
+\item muchas organizaciones deben cumplir un contrato fijo, como los emisores de facturas ante el SRI;
+\item el documento ya es XML.
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{block}{REST conviene cuando\dots}
+\begin{itemize}
+\item el cliente es una web o una app móvil;
+\item importa el tamaño del mensaje y aprovechar la caché de HTTP.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\vspace{10pt}
+\begin{alertblock}{Pero REST mal hecho cuesta}
+Solo el 0,8\,\% de 500 API públicas cumple todos los principios REST \cite{neumann2021}. Romper las reglas de diseño hace la API más difícil de entender en 11 de 12 reglas probadas \cite{bogner2023}, y cambiarla sin romper a los clientes exige versiones y compatibilidad \cite{lercher2024}.
+\end{alertblock}
+\end{frame}

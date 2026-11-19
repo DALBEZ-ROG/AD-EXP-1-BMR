@@ -1,0 +1,79 @@
+\begin{frame}{Tolerancia a fallos: detectar y recuperarse}
+\begin{columns}[T]
+\begin{column}{0.47\textwidth}
+\begin{block}{Cómo se detecta}
+\begin{itemize}
+\item Se vence el tiempo de espera (\emph{timeout}).
+\item Llega un código HTTP 5xx.
+\item Llega un SOAP Fault, como el de nuestro PFC cuando la solicitud no existe.
+\end{itemize}
+\end{block}
+\end{column}
+\begin{column}{0.47\textwidth}
+\begin{block}{Cómo se recupera}
+\begin{itemize}
+\item Reintentar con esperas cada vez más largas, \alert{solo} si el método es idempotente (\texttt{GET}, \texttt{PUT}, \texttt{DELETE}) \cite{rfc9110}.
+\item Tener un plan B, como el respaldo de SGIRI cuando falla Globalping.
+\item Analizar la causa raíz después del incidente \cite{soldani2023}.
+\end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Incidente real: AWS us-east-1, 19 y 20 de octubre de 2025}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm, hito/.style={circle,fill=verde,inner sep=2.2pt}, hora/.style={font=\small\bfseries,color=tinta}, texto/.style={font=\scriptsize,align=center,text width=2.3cm}]
+\draw[very thick,color=gris] (0,0) -- (12.4,0);
+\node[hito,fill=rojo] at (0.6,0) {};
+\node[hora,above] at (0.6,0.15) {23:48};
+\node[texto,below] at (0.6,-0.15) {Empiezan los errores en la API de DynamoDB};
+\node[hito] at (3.4,0) {};
+\node[hora,above] at (3.4,0.15) {00:38};
+\node[texto,below] at (3.4,-0.15) {Los ingenieros ubican la causa en el DNS};
+\node[hito] at (6.2,0) {};
+\node[hora,above] at (6.2,0.15) {02:25};
+\node[texto,below] at (6.2,-0.15) {Restauran el registro DNS};
+\node[hito] at (9.0,0) {};
+\node[hora,above] at (9.0,0.15) {02:40};
+\node[texto,below] at (9.0,-0.15) {DynamoDB vuelve a la normalidad};
+\node[hito,fill=ambar] at (11.8,0) {};
+\node[hora,above] at (11.8,0.15) {14:20};
+\node[texto,below] at (11.8,-0.15) {Se recuperan EC2, NLB, Lambda y los demás};
+\end{tikzpicture}
+\par\vspace{8pt}
+\begin{columns}[T]
+\begin{column}{0.3\textwidth}
+\cifra{2 h 52 min}{de errores en la API de DynamoDB}
+\end{column}
+\begin{column}{0.3\textwidth}
+\cifra{14 h 32 min}{hasta recuperar todo lo afectado}
+\end{column}
+\begin{column}{0.34\textwidth}
+\small Dos procesos de la automatización del DNS chocaron: uno aplicó un plan viejo encima del nuevo y la limpieza lo borró. El nombre del servicio quedó sin direcciones IP.
+\end{column}
+\end{columns}
+\fuente{aws2025}
+\end{frame}
+
+\begin{frame}{Causas raíz del incidente (Ishikawa)}
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm, causa/.style={font=\scriptsize,align=left,text width=3.3cm}, cat/.style={font=\small\bfseries,color=verde}]
+\draw[very thick,color=tinta,-{Stealth[length=3mm]}] (0,0) -- (10.6,0);
+\node[draw=rojo,thick,fill=grisclaro,rounded corners=3pt,font=\small\bfseries,align=center,text width=2.4cm,anchor=west] at (10.65,0) {API de DynamoDB inalcanzable en us-east-1};
+\draw[thick,color=tinta] (3.9,2.4) -- (4.9,0);
+\draw[thick,color=tinta] (9.0,2.4) -- (10.0,0);
+\draw[thick,color=tinta] (3.9,-2.4) -- (4.9,0);
+\draw[thick,color=tinta] (9.0,-2.4) -- (10.0,0);
+\node[cat,anchor=south] at (3.9,2.4) {Automatización};
+\node[cat,anchor=south] at (9.0,2.4) {Procesos};
+\node[cat,anchor=north] at (3.9,-2.4) {Dependencias};
+\node[cat,anchor=north] at (9.0,-2.4) {Recuperación};
+\node[causa,anchor=east] at (4.2,1.25) {$\bullet$ Condición de carrera entre dos procesos del DNS\\$\bullet$ La comprobación del plan quedó vieja por un retraso};
+\node[causa,anchor=east] at (9.3,1.25) {$\bullet$ Nada impedía aplicar un plan DNS erróneo\\$\bullet$ La reparación tuvo que ser manual};
+\node[causa,anchor=east] at (4.2,-1.25) {$\bullet$ El gestor de instancias de EC2 dependía de DynamoDB\\$\bullet$ Cascada sobre EC2, NLB y Lambda};
+\node[causa,anchor=east] at (9.3,-1.25) {$\bullet$ Al volver, el gestor de EC2 se congestionó\\$\bullet$ Los \emph{health checks} de NLB quitaron capacidad sana};
+\end{tikzpicture}
+\par
+{\scriptsize Acción de AWS: apagó esa automatización del DNS en todo el mundo hasta corregirla \cite{aws2025}. Método de causas raíz como en FORM-AC-01 \cite{soldani2023}.\par}
+\end{frame}
