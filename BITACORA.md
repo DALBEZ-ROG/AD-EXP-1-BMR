@@ -63,3 +63,14 @@
   - Se le confirmó a Dayver que su paquete trae todo lo que le toca: las secciones 6, 7 y 10, sus capturas, la lectura 3 y su nota de uso de IA.
 - **Problemas resueltos:**
   - Angello y Dayver tenían el paquete del lunes, que no traía sus secciones generales y les asignaba lecturas que no son de acceso libre (Neumann y Soldani). Ya tienen el paquete nuevo, con sus secciones (3, 4 y 5 para Angello; 6 y 7 para Dayver) y lecturas de acceso libre (Golmohammadi et al., 2024, y Lercher et al., 2024).
+
+## Jueves 19 de noviembre de 2026
+
+- **Presentes:** Dariem Benites.
+- **Qué hicimos:**
+  - Se comprobó que las diapositivas y las notas compilan desde una copia limpia del repositorio, ya con las secciones de Angello y de Dayver.
+  - Se prepararon opciones de pregunta crítica para los equipos de WebSockets, de RPC, gRPC y RMI, y de computación paralela.
+- **Problemas resueltos:**
+  - En las notas de la parte 8 arregle un texto que no estaba bien, y se volvió a compilar.
+- **Pendiente:**
+  - Las notas ya ocupan 5 páginas y la guía pide de 2 a 4. El viernes se ajustan, dejando el bosquejo a mano como anexo.
