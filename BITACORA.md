@@ -54,3 +54,12 @@
 - **Problemas resueltos:**
   - La tabla de la sección 4 y el bloque de abajo se pasaban del alto de la diapositiva; se acortaron las frases y ya entran.
   - La tabla de la sección 9 se salía a lo ancho; se cambió la ruta completa por la parte final y se aclaró que todas cuelgan de `/api/tickets`.
+
+## Miércoles 18 de noviembre de 2026 (segunda sesión)
+
+- **Presentes:** Dariem Benites.
+- **Qué hicimos:**
+  - Se revisó en el repositorio lo que ya está y lo que le falta a cada uno antes del cierre del sábado 21.
+  - Se le confirmó a Dayver que su paquete trae todo lo que le toca: las secciones 6, 7 y 10, sus capturas, la lectura 3 y su nota de uso de IA.
+- **Problemas resueltos:**
+  - Angello y Dayver tenían el paquete del lunes, que no traía sus secciones generales y les asignaba lecturas que no son de acceso libre (Neumann y Soldani). Ya tienen el paquete nuevo, con sus secciones (3, 4 y 5 para Angello; 6 y 7 para Dayver) y lecturas de acceso libre (Golmohammadi et al., 2024, y Lercher et al., 2024).
