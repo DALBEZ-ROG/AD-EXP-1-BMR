@@ -1,0 +1,5 @@
+Mi proyecto es el sistema de gestión documental de titulación. Ahí el estudiante escribe su documento, el director lo revisa y deja observaciones, y al final se descarga el expediente en PDF. El frontend en Angular habla con un backend en Spring Boot 4 solo por REST y JSON; los datos van a PostgreSQL y los PDF a Azure Blob Storage. Son 67 controladores REST y 396 \emph{endpoints}.
+
+En la tabla muestro los recursos del documento. El \texttt{GET} y el \texttt{PUT} son idempotentes: si guardo el documento dos veces, queda igual. El \texttt{POST} de observación no lo es, porque cada vez crea una observación nueva. Por eso solo los primeros se pueden reintentar sin peligro \cite{rfc9110}.
+
+La captura es una petición real a mi sistema. Revisando el código vi que un documento que no existía devolvía 500, porque el servicio lanzaba una excepción genérica. Lo cambié para que responda 404, hice que crear una observación devuelva 201 Created y agregué un filtro que pone \texttt{ETag} al documento: si el navegador lo pide otra vez con \texttt{If-None-Match} y no cambió, recibe 304 y no se descarga de nuevo.
