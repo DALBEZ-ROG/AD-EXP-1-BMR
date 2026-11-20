@@ -1,5 +1,6 @@
 \begin{frame}{Gestión documental de titulación: dónde usamos servicios web}
 {\small Estudiantes, directores y tribunal trabajan el documento de titulación en la web: lo escriben, lo revisan, lo aprueban y descargan el expediente en PDF.\par}
+{\scriptsize\color{gris}Repositorio: \texttt{Troyano2004/sistema-titulacion-uteq}\par}
 \vspace{10pt}
 \centering
 \begin{tikzpicture}[node distance=0.9cm and 2.2cm, caja/.style={draw=verde,rounded corners=3pt,fill=verdesuave,minimum width=2.6cm,minimum height=0.9cm,font=\small,align=center}, flecha/.style={-{Stealth[length=2.5mm]},thick,color=tinta}, etiqueta/.style={font=\scriptsize,color=gris}]
@@ -63,7 +64,7 @@ Si repito el \texttt{PUT}, el documento queda igual. Si repito el \texttt{POST},
 \end{columns}
 \vspace{2pt}
 \begin{alertblock}{Cambios en mi API}
-Antes un documento inexistente daba \texttt{500}; ahora da \texttt{404}. Crear una observación devuelve \texttt{201 Created}. El documento lleva \texttt{ETag}.
+Antes un documento inexistente daba \texttt{500}; ahora da \texttt{404}. Crear una observación devuelve \texttt{201 Created}. El documento lleva \texttt{ETag}. Commit \texttt{d816355}.
 \end{alertblock}
 \fuente{rfc9110}
 \end{frame}
