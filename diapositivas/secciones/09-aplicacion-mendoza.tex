@@ -26,27 +26,10 @@
 \end{frame}
 
 \begin{frame}{Una petición real a la API de SGIRI}
-\begin{columns}[c]
-\begin{column}{0.52\textwidth}
 \centering
-\IfFileExists{../figuras/mendoza-peticion.png}{\includegraphics[width=\linewidth,height=0.68\textheight,keepaspectratio]{../figuras/mendoza-peticion.png}}{\fbox{\parbox[c][4.4cm][c]{0.95\linewidth}{\centering\small\color{gris}Falta \texttt{figuras/mendoza-peticion.png}: captura de Postman con la fecha visible}}}
-\end{column}
-\begin{column}{0.44\textwidth}
-\scriptsize
-\begin{tabular}{@{}ll@{}}
-\toprule
-Qué hace & Petición \\
-\midrule
-Lista los tickets & \texttt{GET /all} \\
-Crea un ticket & \texttt{POST} \\
-Muestra uno & \texttt{GET /\{id\}} \\
-Cambia el estado & \texttt{PUT /\{id\}/status} \\
-\bottomrule
-\end{tabular}
-\par\vspace{8pt}
-{\scriptsize Todas cuelgan de \texttt{/api/tickets}; el cuerpo va en JSON y pide haber iniciado sesión.}
-\end{column}
-\end{columns}
+\IfFileExists{../figuras/mendoza-peticion.png}{\includegraphics[width=0.78\linewidth,height=0.58\textheight,keepaspectratio]{../figuras/mendoza-peticion.png}}{\fbox{\parbox[c][4.4cm][c]{0.95\linewidth}{\centering\small\color{gris}Falta \texttt{figuras/mendoza-peticion.png}: captura de la petición con la fecha visible}}}
+\par\vspace{4pt}
+{\scriptsize \texttt{POST /api/auth/login} devuelve 200 con el usuario, su rol y el token; con ese token se piden los tickets.}
 \fuente{rfc9110}
 \end{frame}
 

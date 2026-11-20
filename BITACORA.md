@@ -74,3 +74,17 @@
   - En las notas de la parte 8 arregle un texto que no estaba bien, y se volvió a compilar.
 - **Pendiente:**
   - Las notas ya ocupan 5 páginas y la guía pide de 2 a 4. El viernes se ajustan, dejando el bosquejo a mano como anexo.
+
+## Jueves 19 de noviembre de 2026 (segunda sesión)
+
+- **Presentes:** Angello Mendoza.
+- **Qué hicimos:**
+  - Se instaló PostgreSQL 19 y se levantó la base local `SGIM2` con el respaldo del proyecto: 16 usuarios y 33 tickets.
+  - Se compiló el backend de SGIRI con Java 21 y se arrancó contra esa base para probar la API de verdad.
+  - Se probó el login y la consulta de tickets, y se tomó la captura de la petición para la sección 9.
+  - Se ajustó la sección 9: la ruta que un cliente puede usar es `GET /api/tickets/my-tickets`, no `/all`, que es solo de administradores.
+- **Problemas resueltos:**
+  - El respaldo es del 20 de marzo y no traía las columnas `firma_tecnico_url` y `firma_cliente_url`; se agregaron a la base local para que las consultas de tickets respondieran.
+  - El usuario `sgiri_app` no tenía permisos sobre los esquemas; se le dieron para que el backend arrancara.
+  - La API devuelve el usuario completo, con el hash de la contraseña; por eso la captura se hizo del login y no de la lista de tickets.
+- **Nota:** el commit se subió el viernes 20 de noviembre a las 00:04, después de terminar la captura.
