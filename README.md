@@ -6,7 +6,7 @@ Exposición del primer corte (GA-SUM-02) de Aplicaciones Distribuidas (ISR-701),
 |---|---|---|
 | Benites Pérez Dariem Alberto | [DALBEZ-ROG](https://github.com/DALBEZ-ROG) | [PresustentacionesAWPS](https://github.com/DALBEZ-ROG/PresustentacionesAWPS) |
 | Mendoza Bermello Angello Agustín | [Amendozab5](https://github.com/Amendozab5) | [SGIRI](https://github.com/Amendozab5/SGIRI) |
-| Rivas Piloso Dayver Yahir | [drivasp](https://github.com/drivasp) | [Gestión documental de titulación (APPweb-)](https://github.com/Troyano2004/APPweb-) |
+| Rivas Piloso Dayver Yahir | [drivasp](https://github.com/drivasp) | [Gestión documental de titulación (sistema-titulacion-uteq)](https://github.com/Troyano2004/sistema-titulacion-uteq) |
 
 ## Video del ensayo
 
