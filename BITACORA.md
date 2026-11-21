@@ -88,3 +88,16 @@
   - El usuario `sgiri_app` no tenía permisos sobre los esquemas; se le dieron para que el backend arrancara.
   - La API devuelve el usuario completo, con el hash de la contraseña; por eso la captura se hizo del login y no de la lista de tickets.
 - **Nota:** el commit se subió el viernes 20 de noviembre a las 00:04, después de terminar la captura.
+
+## Viernes 20 de noviembre de 2026
+
+- **Presentes:** Dariem Benites.
+- **Qué hicimos:**
+  - Se revisaron las partes 9 y 10 contra el código de SGIRI y del sistema de titulación: las cifras, los *endpoints* y los cambios que mencionan coinciden con sus repositorios.
+  - Se compilaron las diapositivas y las notas desde una copia limpia del repositorio, ya con las partes de los tres.
+  - Se ajustaron las notas a 4 páginas, más el anexo con el bosquejo y las lecturas.
+  - Se actualizó la tabla de aportes con lo que subió cada uno y el enlace a sus commits.
+  - En el README se cambió el enlace del proyecto de Dayver a su repositorio actual, `sistema-titulacion-uteq`.
+- **Problemas resueltos:**
+  - Las notas habían crecido a 6 páginas y la guía pide de 2 a 4. Se redujo el margen y las capturas de lectura del anexo se pusieron en una sola fila.
+  - La lección de SGIRI decía que todo servicio externo necesita un tiempo límite, pero en el código de SGIRI no hay uno configurado. Se dejó lo que sí muestra: el plan B y el registro del fallo.
