@@ -101,3 +101,33 @@
 - **Problemas resueltos:**
   - Las notas habían crecido a 6 páginas y la guía pide de 2 a 4. Se redujo el margen y las capturas de lectura del anexo se pusieron en una sola fila.
   - La lección de SGIRI decía que todo servicio externo necesita un tiempo límite, pero en el código de SGIRI no hay uno configurado. Se dejó lo que sí muestra: el plan B y el registro del fallo.
+
+## Miércoles 18 de noviembre de 2026 (tercera sesión)
+
+- **Presentes:** Dayver Rivas.
+- **Qué hicimos:**
+  - Se revisaron las partes 6 y 7: el incidente de AWS del 19 y 20 de octubre de 2025 y la comparación entre SOAP y REST. Se comprobaron las horas del incidente con el informe de AWS y las restas de 2 h 52 min y 14 h 32 min.
+  - Se instalaron MiKTeX y LaTeX Workshop en mi computadora para compilar las diapositivas.
+  - Se compilaron las diapositivas completas y se subieron las partes 6 y 7 con sus notas.
+- **Problemas resueltos:**
+  - VS Code no encontraba `pdflatex` porque se abrió antes de instalar MiKTeX. Se configuró la ruta completa de MiKTeX en LaTeX Workshop.
+  - La primera compilación tardó unos 4 minutos porque MiKTeX descargó los paquetes que faltaban, como Roboto y babel en español.
+
+## Viernes 20 de noviembre de 2026 (segunda sesión)
+
+- **Presentes:** Dayver Rivas.
+- **Qué hicimos:**
+  - En `sistema-titulacion-uteq` se cambió la respuesta de un documento que no existe de 500 a 404, el POST de observación ahora responde 201 y se agregó `ETag` a `/api/titulacion2/documento/*`. El commit es `d816355`.
+  - Se restauró en PostgreSQL 18 la base local `efrain` con el respaldo del proyecto: 11 documentos de titulación y 40 usuarios.
+  - Se levantó el backend con Java 21 y el frontend con Angular, y se probó la API en Postman: 200 con `ETag`, 304 cuando se manda `If-None-Match` y 404 con un id que no existe.
+  - Se subió la parte 10 con sus notas y la captura de Postman, y después una corrección con el repositorio, el commit y la explicación del 304.
+- **Problemas resueltos:**
+  - IntelliJ no tenía un JDK configurado para el proyecto. Se descargó Microsoft OpenJDK 21 desde el mismo IntelliJ.
+  - El backend no arrancaba sin `JWT_SECRET`, `AES_KEY`, `AES_IV` y las variables de Google OAuth. Se usaron valores de prueba solo en local, fuera del repositorio.
+  - Cada usuario se conecta a la base con su propio rol, y esos roles no venían en el respaldo. Se preparó un usuario administrador de prueba en la base local para poder iniciar sesión.
+  - PowerShell bloqueaba `npm` por su política de scripts. Se usó `npm.cmd`, que no pasa por esa política.
+  - La captura completa no se leía en la diapositiva. Se recortó a la respuesta y sus encabezados.
+  - La respuesta trae `Cache-Control: no-store` por Spring Security. En las notas no se habla de la caché del navegador, sino del 304 cuando el cliente manda `If-None-Match`.
+  - Se quitó por error el commit del código y se volvió a subir; el número nuevo es `d816355`.
+- **Pendiente:**
+  - Las capturas del 304 y del 201, y la captura de la lectura 3 (Lercher et al., 2024). Se suben el sábado.
