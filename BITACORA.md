@@ -131,3 +131,12 @@
   - Se quitó por error el commit del código y se volvió a subir; el número nuevo es `d816355`.
 - **Pendiente:**
   - Las capturas del 304 y del 201, y la captura de la lectura 3 (Lercher et al., 2024). Se suben el sábado.
+
+## Viernes 20 de noviembre de 2026 (noche)
+
+- **Presentes:** Dariem Benites.
+- **Qué hicimos:**
+  - Se subieron al repositorio los cambios de la tarde: la parte 11 corregida (diapositivas y notas), `notas/main.tex` en 4 páginas con la tabla de aportes y la declaración actualizadas, y el README con el enlace al repositorio actual de Dayver.
+  - Se grabó la parte de Dariem del video del ensayo: la portada y las partes 1, 2, 8 y 11, siguiendo los tiempos planeados.
+  - Se le pasó el video al equipo para que Angello y Dayver graben sus partes y se una todo en un solo video.
+  - Se revisó la entrada de Dayver en la bitácora y se dejó anotado lo que falta para el sábado: la lectura 3, las capturas del 304 y del 201, las notas de uso de IA y el enlace del video en el README.
