@@ -140,3 +140,17 @@
   - Se grabó la parte de Dariem del video del ensayo: la portada y las partes 1, 2, 8 y 11, siguiendo los tiempos planeados.
   - Se le pasó el video al equipo para que Angello y Dayver graben sus partes y se una todo en un solo video.
   - Se revisó la entrada de Dayver en la bitácora y se dejó anotado lo que falta para el sábado: la lectura 3, las capturas del 304 y del 201, las notas de uso de IA y el enlace del video en el README.
+
+## Sábado 21 de noviembre de 2026
+
+- **Presentes:** Dayver Rivas.
+- **Qué hice:**
+  - Compilé las diapositivas y corregí la parte 10, ya que no se mostraban la descripción del sistema ni la ruta GET.
+  - Levanté el backend en local desde IntelliJ y tomé en Postman las capturas del código 304 con ETag (documento 2) y del 201 al crear una observación (documento 10, docente 60).
+  - Realicé la captura de la lectura 3 (Lercher et al., 2024) en la página 6, resaltando dos frases de las secciones 4.1 y 4.3 sobre versionado y compatibilidad hacia atrás.
+  - Preparé el guion de práctica para las partes 6, 7 y 10 de cara a la grabación del ensayo.
+- **Problemas resueltos:**
+  - Beamer interpretaba el primer bloque después del título como subtítulo y la plantilla no los renderiza. Ajusté el bloque para que se muestre como texto normal y reduje el tamaño de la captura en la diapositiva 23 para que encajara dentro del marco.
+  - Para registrar una observación el documento debía estar en estado `EN_REVISION`, así que utilicé el documento 10 de la base local.
+  - Como la respuesta del 201 mostraba el nombre de un docente y el repositorio es público, oculté ese dato en la imagen antes de subirla.
+  - La primera captura de la lectura salió sin el resaltado aplicado, por lo que la volví a tomar marcando las dos frases correspondientes.
