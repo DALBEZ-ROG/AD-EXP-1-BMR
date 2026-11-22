@@ -10,7 +10,7 @@ Exposición del primer corte (GA-SUM-02) de Aplicaciones Distribuidas (ISR-701),
 
 ## Video del ensayo
 
-Pendiente.
+https://youtu.be/_31LxwRahYM
 
 ## Contenido
 
