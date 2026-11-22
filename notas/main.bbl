@@ -1,0 +1,735 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{w3c_soap12}{online}{}{}
+      \name{editor}{7}{}{%
+        {{hash=3f6f74834a7ac6856fc19236fa38cd5f}{%
+           family={Gudgin},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2aa7a2ab695d9d7a480c265c6d350783}{%
+           family={Hadley},
+           familyi={H\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0c60d8b2b0e72e3f09e760db85df237d}{%
+           family={Mendelsohn},
+           familyi={M\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3ab5575c7a7215d0a3736289ee185e16}{%
+           family={Moreau},
+           familyi={M\bibinitperiod},
+           given={Jean-Jacques},
+           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=88ad07f2f374db0b1bdc93a441332303}{%
+           family={Nielsen},
+           familyi={N\bibinitperiod},
+           given={Henrik\bibnamedelima Frystyk},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=f25d3f1add99d9f2eefb8f17c64f63c1}{%
+           family={Karmarkar},
+           familyi={K\bibinitperiod},
+           given={Anish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f4d3b0d4dcadad77438bb6ca2557c947}{%
+           family={Lafon},
+           familyi={L\bibinitperiod},
+           given={Yves},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {W3C Recommendation}%
+      }
+      \strng{namehash}{9bcf0bda23981d763982098ac90833c3}
+      \strng{fullhash}{227e3573b7823ca88b24b561755f787f}
+      \strng{fullhashraw}{227e3573b7823ca88b24b561755f787f}
+      \strng{bibnamehash}{9bcf0bda23981d763982098ac90833c3}
+      \strng{editorbibnamehash}{9bcf0bda23981d763982098ac90833c3}
+      \strng{editornamehash}{9bcf0bda23981d763982098ac90833c3}
+      \strng{editorfullhash}{227e3573b7823ca88b24b561755f787f}
+      \strng{editorfullhashraw}{227e3573b7823ca88b24b561755f787f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{langid}{american}
+      \field{month}{4}
+      \field{title}{{SOAP} Version 1.2 Part 1: Messaging Framework (Second Edition)}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/soap12-part1/
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/soap12-part1/
+      \endverb
+    \endentry
+    \entry{fielding2000}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=87dbbd44b3977c28b71d826a931add3e}{%
+           family={Fielding},
+           familyi={F\bibinitperiod},
+           given={Roy\bibnamedelima Thomas},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of California, Irvine}%
+      }
+      \strng{namehash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{fullhash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{fullhashraw}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{bibnamehash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{authorbibnamehash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{authornamehash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{authorfullhash}{87dbbd44b3977c28b71d826a931add3e}
+      \strng{authorfullhashraw}{87dbbd44b3977c28b71d826a931add3e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{title}{Architectural Styles and the Design of Network-based Software Architectures}
+      \field{type}{phdthesis}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ics.uci.edu/~fielding/pubs/dissertation/top.htm
+      \endverb
+      \verb{url}
+      \verb https://ics.uci.edu/~fielding/pubs/dissertation/top.htm
+      \endverb
+    \endentry
+    \entry{aws_primeday2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=0f08517bbdef58ef357d6c17fe4cc902}{%
+           family={Yun},
+           familyi={Y\bibinitperiod},
+           given={Channy},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {AWS News Blog}%
+      }
+      \strng{namehash}{0f08517bbdef58ef357d6c17fe4cc902}
+      \strng{fullhash}{0f08517bbdef58ef357d6c17fe4cc902}
+      \strng{fullhashraw}{0f08517bbdef58ef357d6c17fe4cc902}
+      \strng{bibnamehash}{0f08517bbdef58ef357d6c17fe4cc902}
+      \strng{authorbibnamehash}{0f08517bbdef58ef357d6c17fe4cc902}
+      \strng{authornamehash}{0f08517bbdef58ef357d6c17fe4cc902}
+      \strng{authorfullhash}{0f08517bbdef58ef357d6c17fe4cc902}
+      \strng{authorfullhashraw}{0f08517bbdef58ef357d6c17fe4cc902}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{langid}{american}
+      \field{month}{10}
+      \field{title}{All the numbers: {Amazon} {Prime} {Day} 2026 powered by {AWS}}
+      \field{urlday}{17}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/blogs/aws/all-the-numbers-amazon-prime-day-2026-powered-by-aws/
+      \endverb
+    \endentry
+    \entry{neumann2021}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=5b1e0816f533d55eb503d4b8ed3ca271}{%
+           family={Neumann},
+           familyi={N\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=86e0a4cf0f2d404045ba754072aeb2b7}{%
+           family={Laranjeiro},
+           familyi={L\bibinitperiod},
+           given={Nuno},
+           giveni={N\bibinitperiod}}}%
+        {{hash=251db60f77d96aa82892e32418380cf1}{%
+           family={Bernardino},
+           familyi={B\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7753b668457b536b0ac918a0f6e4c73}
+      \strng{fullhash}{06157e246209a3972faa93cd0be56dc7}
+      \strng{fullhashraw}{06157e246209a3972faa93cd0be56dc7}
+      \strng{bibnamehash}{06157e246209a3972faa93cd0be56dc7}
+      \strng{authorbibnamehash}{06157e246209a3972faa93cd0be56dc7}
+      \strng{authornamehash}{d7753b668457b536b0ac918a0f6e4c73}
+      \strng{authorfullhash}{06157e246209a3972faa93cd0be56dc7}
+      \strng{authorfullhashraw}{06157e246209a3972faa93cd0be56dc7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Services Computing}
+      \field{langid}{american}
+      \field{month}{7}
+      \field{number}{4}
+      \field{title}{An Analysis of Public {REST} {Web} Service {APIs}}
+      \field{volume}{14}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{957\bibrangedash 970}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TSC.2018.2847344
+      \endverb
+    \endentry
+    \entry{sri_recepcion}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=fe0897253d6228afe34af43a0dbb795a}{%
+           family={{Servicio de Rentas Internas del Ecuador}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Comprobantes electrónicos, ambiente de pruebas (WSDL)}%
+      }
+      \strng{namehash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{fullhash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{fullhashraw}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{bibnamehash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{authorbibnamehash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{authornamehash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{authorfullhash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{authorfullhashraw}{fe0897253d6228afe34af43a0dbb795a}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{{RecepcionComprobantesOfflineService}}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl
+      \endverb
+      \verb{url}
+      \verb https://celcer.sri.gob.ec/comprobantes-electronicos-ws/RecepcionComprobantesOffline?wsdl
+      \endverb
+    \endentry
+    \entry{sri_autorizacion}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=fe0897253d6228afe34af43a0dbb795a}{%
+           family={{Servicio de Rentas Internas del Ecuador}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Comprobantes electrónicos, ambiente de pruebas (WSDL)}%
+      }
+      \strng{namehash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{fullhash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{fullhashraw}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{bibnamehash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{authorbibnamehash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{authornamehash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{authorfullhash}{fe0897253d6228afe34af43a0dbb795a}
+      \strng{authorfullhashraw}{fe0897253d6228afe34af43a0dbb795a}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{spanish}
+      \field{title}{{AutorizacionComprobantesOfflineService}}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://celcer.sri.gob.ec/comprobantes-electronicos-ws/AutorizacionComprobantesOffline?wsdl
+      \endverb
+      \verb{url}
+      \verb https://celcer.sri.gob.ec/comprobantes-electronicos-ws/AutorizacionComprobantesOffline?wsdl
+      \endverb
+    \endentry
+    \entry{w3c_wsdl11}{online}{}{}
+      \name{author}{4}{}{%
+        {{hash=39c657bc09863663530ff4d2d2ec0948}{%
+           family={Christensen},
+           familyi={C\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d242b74b900a6acca71998585077d35e}{%
+           family={Curbera},
+           familyi={C\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a66e64e37a92fc0a1793a71625d580b6}{%
+           family={Meredith},
+           familyi={M\bibinitperiod},
+           given={Greg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ad25b96bff24b15f8bc4c35beab635c7}{%
+           family={Weerawarana},
+           familyi={W\bibinitperiod},
+           given={Sanjiva},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {W3C Note}%
+      }
+      \strng{namehash}{97a5d173e072ecfa453d8b7181d459f3}
+      \strng{fullhash}{0541252a266b79b8515c581d6d73b544}
+      \strng{fullhashraw}{0541252a266b79b8515c581d6d73b544}
+      \strng{bibnamehash}{0541252a266b79b8515c581d6d73b544}
+      \strng{authorbibnamehash}{0541252a266b79b8515c581d6d73b544}
+      \strng{authornamehash}{97a5d173e072ecfa453d8b7181d459f3}
+      \strng{authorfullhash}{0541252a266b79b8515c581d6d73b544}
+      \strng{authorfullhashraw}{0541252a266b79b8515c581d6d73b544}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{langid}{american}
+      \field{month}{3}
+      \field{title}{{Web} Services Description Language {(WSDL)} 1.1}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.w3.org/TR/2001/NOTE-wsdl-20010315
+      \endverb
+      \verb{url}
+      \verb https://www.w3.org/TR/2001/NOTE-wsdl-20010315
+      \endverb
+    \endentry
+    \entry{rfc9110}{report}{}{}
+      \name{editor}{3}{}{%
+        {{hash=a6155135a306bddfc30cc4f52d1924e6}{%
+           family={Fielding},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=55ac868e62f6d4ea8f9f143c4c584739}{%
+           family={Nottingham},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=225e8f62a72b900586837313fbf16715}{%
+           family={Reschke},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force (IETF)}%
+      }
+      \strng{namehash}{55d7afa00010e0ea88cf7be388134e11}
+      \strng{fullhash}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{fullhashraw}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{bibnamehash}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{editorbibnamehash}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{editornamehash}{55d7afa00010e0ea88cf7be388134e11}
+      \strng{editorfullhash}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{editorfullhashraw}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \field{extraname}{1}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{month}{6}
+      \field{number}{9110}
+      \field{title}{{HTTP} Semantics}
+      \field{type}{RFC}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC9110
+      \endverb
+    \endentry
+    \entry{openapi31}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2140293a9301207642312840ece53671}{%
+           family={{OpenAPI Initiative}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{2140293a9301207642312840ece53671}
+      \strng{fullhash}{2140293a9301207642312840ece53671}
+      \strng{fullhashraw}{2140293a9301207642312840ece53671}
+      \strng{bibnamehash}{2140293a9301207642312840ece53671}
+      \strng{authorbibnamehash}{2140293a9301207642312840ece53671}
+      \strng{authornamehash}{2140293a9301207642312840ece53671}
+      \strng{authorfullhash}{2140293a9301207642312840ece53671}
+      \strng{authorfullhashraw}{2140293a9301207642312840ece53671}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{langid}{american}
+      \field{month}{2}
+      \field{title}{{OpenAPI} Specification v3.1.0}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://spec.openapis.org/oas/v3.1.0
+      \endverb
+      \verb{url}
+      \verb https://spec.openapis.org/oas/v3.1.0
+      \endverb
+    \endentry
+    \entry{aws2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{title}{Summary of the {Amazon} {DynamoDB} Service Disruption in the {Northern} {Virginia} {(US-EAST-1)} Region}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/message/101925/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/message/101925/
+      \endverb
+    \endentry
+    \entry{abadi2012}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7f2a4d6d7d7a93ccacddb011cfd8fe52}{%
+           family={Abadi},
+           familyi={A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f2a4d6d7d7a93ccacddb011cfd8fe52}
+      \strng{fullhash}{7f2a4d6d7d7a93ccacddb011cfd8fe52}
+      \strng{fullhashraw}{7f2a4d6d7d7a93ccacddb011cfd8fe52}
+      \strng{bibnamehash}{7f2a4d6d7d7a93ccacddb011cfd8fe52}
+      \strng{authorbibnamehash}{7f2a4d6d7d7a93ccacddb011cfd8fe52}
+      \strng{authornamehash}{7f2a4d6d7d7a93ccacddb011cfd8fe52}
+      \strng{authorfullhash}{7f2a4d6d7d7a93ccacddb011cfd8fe52}
+      \strng{authorfullhashraw}{7f2a4d6d7d7a93ccacddb011cfd8fe52}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer}
+      \field{langid}{american}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Consistency Tradeoffs in Modern Distributed Database System Design: {CAP} is Only Part of the Story}
+      \field{volume}{45}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{37\bibrangedash 42}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/MC.2012.33
+      \endverb
+    \endentry
+    \entry{aws_consistencia}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Amazon DynamoDB Developer Guide}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{title}{{DynamoDB} read consistency}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html
+      \endverb
+    \endentry
+    \entry{rfc9111}{report}{}{}
+      \name{editor}{3}{}{%
+        {{hash=a6155135a306bddfc30cc4f52d1924e6}{%
+           family={Fielding},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=55ac868e62f6d4ea8f9f143c4c584739}{%
+           family={Nottingham},
+           familyi={N\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=225e8f62a72b900586837313fbf16715}{%
+           family={Reschke},
+           familyi={R\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force (IETF)}%
+      }
+      \strng{namehash}{55d7afa00010e0ea88cf7be388134e11}
+      \strng{fullhash}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{fullhashraw}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{bibnamehash}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{editorbibnamehash}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{editornamehash}{55d7afa00010e0ea88cf7be388134e11}
+      \strng{editorfullhash}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \strng{editorfullhashraw}{c041f6bbb0d8a8e111b5a59cfd0aee9f}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{month}{6}
+      \field{number}{9111}
+      \field{title}{{HTTP} Caching}
+      \field{type}{RFC}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC9111
+      \endverb
+    \endentry
+    \entry{aws_dynamodb_api}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3eb2c1a57a8160029f036e3dcbf84bf1}{%
+           family={{Amazon Web Services}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Amazon DynamoDB Developer Guide}%
+      }
+      \strng{namehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{fullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{bibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorbibnamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authornamehash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhash}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \strng{authorfullhashraw}{3eb2c1a57a8160029f036e3dcbf84bf1}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{title}{{DynamoDB} low-level {API}}
+      \field{urlday}{17}
+      \field{urlmonth}{11}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.LowLevelAPI.html
+      \endverb
+      \verb{url}
+      \verb https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.LowLevelAPI.html
+      \endverb
+    \endentry
+    \entry{soldani2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=b0a68289ccf904bbfb7488cfbaaa8bb8}{%
+           family={Soldani},
+           familyi={S\bibinitperiod},
+           given={Jacopo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2964d7827a7d46baf7837b36d3562322}{%
+           family={Brogi},
+           familyi={B\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ec1a2e971b79c333ad60707b707a9d85}
+      \strng{fullhash}{ec1a2e971b79c333ad60707b707a9d85}
+      \strng{fullhashraw}{ec1a2e971b79c333ad60707b707a9d85}
+      \strng{bibnamehash}{ec1a2e971b79c333ad60707b707a9d85}
+      \strng{authorbibnamehash}{ec1a2e971b79c333ad60707b707a9d85}
+      \strng{authornamehash}{ec1a2e971b79c333ad60707b707a9d85}
+      \strng{authorfullhash}{ec1a2e971b79c333ad60707b707a9d85}
+      \strng{authorfullhashraw}{ec1a2e971b79c333ad60707b707a9d85}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{langid}{american}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Anomaly Detection and Failure Root Cause Analysis in {(Micro)} Service-Based Cloud Applications: A Survey}
+      \field{volume}{55}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 39}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1145/3501297
+      \endverb
+    \endentry
+    \entry{bogner2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6f9a37903012edd7915c3973ef8478b7}{%
+           family={Bogner},
+           familyi={B\bibinitperiod},
+           given={Justus},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ba0b47f83987dfb6cc69fa8f663c427c}{%
+           family={Kotstein},
+           familyi={K\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=06a216423897d5982d74d1696f0d5175}{%
+           family={Pfaff},
+           familyi={P\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{0eef754b5004eb842f3be8b721452bec}
+      \strng{fullhash}{b4b3c078f1902f217017a6bc90658d95}
+      \strng{fullhashraw}{b4b3c078f1902f217017a6bc90658d95}
+      \strng{bibnamehash}{b4b3c078f1902f217017a6bc90658d95}
+      \strng{authorbibnamehash}{b4b3c078f1902f217017a6bc90658d95}
+      \strng{authornamehash}{0eef754b5004eb842f3be8b721452bec}
+      \strng{authorfullhash}{b4b3c078f1902f217017a6bc90658d95}
+      \strng{authorfullhashraw}{b4b3c078f1902f217017a6bc90658d95}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{132}
+      \field{journaltitle}{Empirical Software Engineering}
+      \field{langid}{american}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{Do {RESTful} {API} design rules have an impact on the understandability of {Web} {APIs}?}
+      \field{volume}{28}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1007/s10664-023-10367-y
+      \endverb
+    \endentry
+    \entry{lercher2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=5d9b1999dc9c4be16f4a11ade3160998}{%
+           family={Lercher},
+           familyi={L\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4feca06cae85e609fa48023e3faf8ee0}{%
+           family={Glock},
+           familyi={G\bibinitperiod},
+           given={Johann},
+           giveni={J\bibinitperiod}}}%
+        {{hash=99f5da2743d9f0ee14da16321a71047b}{%
+           family={Macho},
+           familyi={M\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=17a66c6d2759fd306795c3b03fa56fde}{%
+           family={Pinzger},
+           familyi={P\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f8671e4dc7e7ad8ad196b3de759acd1}
+      \strng{fullhash}{5cddb20828959c2fc55049a2084136e8}
+      \strng{fullhashraw}{5cddb20828959c2fc55049a2084136e8}
+      \strng{bibnamehash}{5cddb20828959c2fc55049a2084136e8}
+      \strng{authorbibnamehash}{5cddb20828959c2fc55049a2084136e8}
+      \strng{authornamehash}{0f8671e4dc7e7ad8ad196b3de759acd1}
+      \strng{authorfullhash}{5cddb20828959c2fc55049a2084136e8}
+      \strng{authorfullhashraw}{5cddb20828959c2fc55049a2084136e8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{112110}
+      \field{journaltitle}{Journal of Systems and Software}
+      \field{langid}{american}
+      \field{month}{9}
+      \field{title}{Microservice {API} Evolution in Practice: A Study on Strategies and Challenges}
+      \field{volume}{215}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1016/j.jss.2024.112110
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
